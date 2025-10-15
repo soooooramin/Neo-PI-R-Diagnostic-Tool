@@ -1,0 +1,23 @@
+.title{
+    text-align: center;
+    font-family: "Toppan Bunkyu Midashi Gothic";
+}
+
+.about{
+    text-align: center;
+    font-family: YuGothic;
+}
+
+main{
+    text-align: center;
+    font-family: YuGothic;
+}
+
+footer{
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}

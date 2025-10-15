@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Neo-PI-R式 心理学診断</h1>
+    <main>
+        <div class="about">パーソナリティ心理学の授業で取り扱った「５因子モデル」の診断です。</div>
+        <hr>
+        <br>
+        <div class="preference">
+            <li>
+                <li>
+                    <p>想像力がたくましい</p>
+                    <input type="radio" name="101" value=1 />全くそうでない
+                    <input type="radio" name="101" value=2 />そうでない
+                    <input type="radio" name="101" value=3 />どちらでもない
+                    <input type="radio" name="101" value=4 />そうだ
+                    <input type="radio" name="101" value=5 />非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>人の仕打ちによく腹を立てる</p>
+                    <input type="radio" name="201" value=1 />全くそうでない
+                    <input type="radio" name="201" value=2 />そうでない
+                    <input type="radio" name="201" value=3 />どちらでもない
+                    <input type="radio" name="201" value=4 />そうだ
+                    <input type="radio" name="201" value=5 />非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>人混みに尻込みしてしまう</p>
+                    <input type="radio" name="301" value=5 />全くそうでない
+                    <input type="radio" name="301" value=4 />そうでない
+                    <input type="radio" name="301" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="301" value=2 id="4"/>そうだ
+                    <input type="radio" name="301" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>芸術的なことや美的なことは、私にとって重要である</p>
+                    <input type="radio" name="102" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="102" value=2 id="2"/>そうでない
+                    <input type="radio" name="102" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="102" value=4 id="4"/>そうだ
+                    <input type="radio" name="102" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>さびしくなったり、憂鬱になったりすることがよくある</p>
+                    <input type="radio" name="202" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="202" value=2 id="2"/>そうでない
+                    <input type="radio" name="202" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="202" value=4 id="4"/>そうだ
+                    <input type="radio" name="202" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>私は支配的で高圧的で、自己主張が強い</p>
+                    <input type="radio" name="302" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="302" value=2 id="2"/>そうでない
+                    <input type="radio" name="302" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="302" value=4 id="4"/>そうだ
+                    <input type="radio" name="302" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>強い感情を経験する</p>
+                    <input type="radio" name="103" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="103" value=2 id="2"/>そうでない
+                    <input type="radio" name="103" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="103" value=4 id="4"/>そうだ
+                    <input type="radio" name="103" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>刺激が欲しくてたまらないことがよくある</p>
+                    <input type="radio" name="303" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="303" value=2 id="2"/>そうでない
+                    <input type="radio" name="303" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="303" value=4 id="4"/>そうだ
+                    <input type="radio" name="303" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>学生に対しては、いろいろな意見や考え方があることを教えるのでなく、一つの考え方を教えるだけで十分だ</p>
+                    <input type="radio" name="104" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="104" value=4 id="2"/>そうでない
+                    <input type="radio" name="104" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="104" value=2 id="4"/>そうだ
+                    <input type="radio" name="104" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>たいていの人は、根は善人だと思う</p>
+                    <input type="radio" name="401" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="401" value=2 id="2"/>そうでない
+                    <input type="radio" name="401" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="401" value=4 id="4"/>そうだ
+                    <input type="radio" name="401" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>自分の望むものを手に入れるためなら、人を操ることもためらわない</p>
+                    <input type="radio" name="402" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="402" value=4 id="2"/>そうでない
+                    <input type="radio" name="402" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="402" value=2 id="4"/>そうだ
+                    <input type="radio" name="402" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>自分には全く価値がないと感じることが時々ある</p>
+                    <input type="radio" name="203" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="203" value=2 id="2"/>そうでない
+                    <input type="radio" name="203" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="203" value=4 id="4"/>そうだ
+                    <input type="radio" name="203" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>人の期待にそったり、約束を守ったりしなければならないのに、時々そうではない</p>
+                    <input type="radio" name="501" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="501" value=4 id="2"/>そうでない
+                    <input type="radio" name="501" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="501" value=2 id="4"/>そうだ
+                    <input type="radio" name="501" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>周りに人がいると、自分をとても意識する</p>
+                    <input type="radio" name="204" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="204" value=2 id="2"/>そうでない
+                    <input type="radio" name="204" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="204" value=4 id="4"/>そうだ
+                    <input type="radio" name="204" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>時として、嫌味を言ったり皮肉屋になることがある</p>
+                    <input type="radio" name="403" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="403" value=4 id="2"/>そうでない
+                    <input type="radio" name="403" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="403" value=2 id="4"/>そうだ
+                    <input type="radio" name="403" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>明確な目標を持っており、それに向かって整然としたやり方で取り組んでいる</p>
+                    <input type="radio" name="502" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="502" value=2 id="2"/>そうでない
+                    <input type="radio" name="502" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="502" value=4 id="4"/>そうだ
+                    <input type="radio" name="502" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>したくてたまらないことを我慢できる</p>
+                    <input type="radio" name="205" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="205" value=2 id="2"/>そうでない
+                    <input type="radio" name="205" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="205" value=4 id="4"/>そうだ
+                    <input type="radio" name="205" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>哲学的な議論は退屈だと思う</p>
+                    <input type="radio" name="105" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="105" value=4 id="2"/>そうでない
+                    <input type="radio" name="105" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="105" value=2 id="4"/>そうだ
+                    <input type="radio" name="105" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>身を入れて仕事を始めるまでに、時間がかかる</p>
+                    <input type="radio" name="503" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="503" value=4 id="2"/>そうでない
+                    <input type="radio" name="503" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="503" value=2 id="4"/>そうだ
+                    <input type="radio" name="503" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>私は非常に空想家だ</p>
+                    <input type="radio" name="106" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="106" value=2 id="2"/>そうでない
+                    <input type="radio" name="106" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="106" value=4 id="4"/>そうだ
+                    <input type="radio" name="106" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>必要な情報や知識を集め、たいていは賢い判断をする</p>
+                    <input type="radio" name="504" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="504" value=2 id="2"/>そうでない
+                    <input type="radio" name="504" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="504" value=4 id="4"/>そうだ
+                    <input type="radio" name="504" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>私は血の気が多く、すぐに起こると思われている</p>
+                    <input type="radio" name="206" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="206" value=2 id="2"/>そうでない
+                    <input type="radio" name="206" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="206" value=4 id="4"/>そうだ
+                    <input type="radio" name="206" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>バレーやモダンダンス（現代舞踊）は退屈だ</p>
+                    <input type="radio" name="107" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="107" value=4 id="2"/>そうでない
+                    <input type="radio" name="107" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="107" value=2 id="4"/>そうだ
+                    <input type="radio" name="107" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>たいていグループでは先頭に立つ方だった</p>
+                    <input type="radio" name="304" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="304" value=2 id="2"/>そうでない
+                    <input type="radio" name="304" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="304" value=4 id="4"/>そうだ
+                    <input type="radio" name="304" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>穴があったら入りたいと思うほど、恥ずかしいことがたまにある</p>
+                    <input type="radio" name="207" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="207" value=2 id="2"/>そうでない
+                    <input type="radio" name="207" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="207" value=4 id="4"/>そうだ
+                    <input type="radio" name="207" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>時々ハラハラするためだけや、ドキドキするための「刺激」を求めて何かをする</p>
+                    <input type="radio" name="305" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="305" value=2 id="2"/>そうでない
+                    <input type="radio" name="305" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="305" value=4 id="4"/>そうだ
+                    <input type="radio" name="305" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>私はたいていの人より優れている</p>
+                    <input type="radio" name="404" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="404" value=4 id="2"/>そうでない
+                    <input type="radio" name="404" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="404" value=2 id="4"/>そうだ
+                    <input type="radio" name="404" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>バリバリと仕事をやって、それをやり遂げる</p>
+                    <input type="radio" name="505" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="505" value=2 id="2"/>そうでない
+                    <input type="radio" name="505" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="505" value=4 id="4"/>そうだ
+                    <input type="radio" name="505" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>よく緊張したり神経過敏になったりする</p>
+                    <input type="radio" name="208" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="208" value=2 id="2"/>そうでない
+                    <input type="radio" name="208" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="208" value=4 id="4"/>そうだ
+                    <input type="radio" name="208" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>取引では正直すぎることは、下手なやり方だ</p>
+                    <input type="radio" name="405" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="405" value=4 id="2"/>そうでない
+                    <input type="radio" name="405" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="405" value=2 id="4"/>そうだ
+                    <input type="radio" name="405" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>何がどこにあるかわかるように、きちんとしておくのが好きだ</p>
+                    <input type="radio" name="506" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="506" value=2 id="2"/>そうでない
+                    <input type="radio" name="506" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="506" value=4 id="4"/>そうだ
+                    <input type="radio" name="506" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>私はいつも他の人を思いやる人間であろうとしている</p>
+                    <input type="radio" name="406" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="406" value=2 id="2"/>そうでない
+                    <input type="radio" name="406" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="406" value=4 id="4"/>そうだ
+                    <input type="radio" name="406" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>一人でやるゲーム（トランプ占いなど）でも、ずるをすることはしない</p>
+                    <input type="radio" name="507" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="507" value=2 id="2"/>そうでない
+                    <input type="radio" name="507" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="507" value=4 id="4"/>そうだ
+                    <input type="radio" name="507" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>元気があふれて、じっとしていられないことがよくある</p>
+                    <input type="radio" name="306" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="306" value=2 id="2"/>そうでない
+                    <input type="radio" name="306" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="306" value=4 id="4"/>そうだ
+                    <input type="radio" name="306" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>好きな食べ物を、ついつい食べ過ぎてしまうようなことはほとんどない</p>
+                    <input type="radio" name="209" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="209" value=4 id="2"/>そうでない
+                    <input type="radio" name="209" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="209" value=2 id="4"/>そうだ
+                    <input type="radio" name="209" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>非常に抽象的で理論的な話になると、興味を失うことがある</p>
+                    <input type="radio" name="108" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="108" value=4 id="2"/>そうでない
+                    <input type="radio" name="108" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="108" value=2 id="4"/>そうだ
+                    <input type="radio" name="108" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>緊急の場合でも冷静なままでいられる</p>
+                    <input type="radio" name="210" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="210" value=4 id="2"/>そうでない
+                    <input type="radio" name="210" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="210" value=2 id="4"/>そうだ
+                    <input type="radio" name="210" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>幸せいっぱいになることがある</p>
+                    <input type="radio" name="307" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="307" value=2 id="2"/>そうでない
+                    <input type="radio" name="307" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="307" value=4 id="4"/>そうだ
+                    <input type="radio" name="307" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>社会が違えば善悪の考え方が違っていても構わないと思う</p>
+                    <input type="radio" name="109" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="109" value=2 id="2"/>そうでない
+                    <input type="radio" name="109" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="109" value=4 id="4"/>そうだ
+                    <input type="radio" name="109" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>物乞いをして生活するような人に強く同情する</p>
+                    <input type="radio" name="407" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="407" value=2 id="2"/>そうでない
+                    <input type="radio" name="407" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="407" value=4 id="4"/>そうだ
+                    <input type="radio" name="407" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>人と話すのがとても楽しい</p>
+                    <input type="radio" name="308" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="308" value=2 id="2"/>そうでない
+                    <input type="radio" name="308" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="308" value=4 id="4"/>そうだ
+                    <input type="radio" name="308" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>慣れ親しんだ所にいる方が好きだ</p>
+                    <input type="radio" name="110" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="110" value=4 id="2"/>そうでない
+                    <input type="radio" name="110" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="110" value=2 id="4"/>そうだ
+                    <input type="radio" name="110" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>自分をとても高く評価している</p>
+                    <input type="radio" name="408" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="408" value=4 id="2"/>そうでない
+                    <input type="radio" name="408" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="408" value=2 id="4"/>そうだ
+                    <input type="radio" name="408" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>もののはずみで、何かをやってしまうことがよくある</p>
+                    <input type="radio" name="508" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="508" value=4 id="2"/>そうでない
+                    <input type="radio" name="508" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="508" value=2 id="4"/>そうだ
+                    <input type="radio" name="508" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>うまくいかないのではないかと、よく心配する</p>
+                    <input type="radio" name="211" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="211" value=2 id="2"/>そうでない
+                    <input type="radio" name="211" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="211" value=4 id="4"/>そうだ
+                    <input type="radio" name="211" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>初対面の人と仲良くなるのは簡単だ</p>
+                    <input type="radio" name="309" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="309" value=2 id="2"/>そうでない
+                    <input type="radio" name="309" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="309" value=4 id="4"/>そうだ
+                    <input type="radio" name="309" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>私は最初から人を信用する</p>
+                    <input type="radio" name="409" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="409" value=2 id="2"/>そうでない
+                    <input type="radio" name="409" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="409" value=4 id="4"/>そうだ
+                    <input type="radio" name="409" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>けんかをしかけられたら、いつでも受けて立つ</p>
+                    <input type="radio" name="410" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="410" value=4 id="2"/>そうでない
+                    <input type="radio" name="410" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="410" value=2 id="4"/>そうだ
+                    <input type="radio" name="410" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>何でもできる限りやり遂げようとがんばる</p>
+                    <input type="radio" name="509" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="509" value=2 id="2"/>そうでない
+                    <input type="radio" name="509" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="509" value=4 id="4"/>そうだ
+                    <input type="radio" name="509" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>軽はずみな決断をよくする</p>
+                    <input type="radio" name="510" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="510" value=4 id="2"/>そうでない
+                    <input type="radio" name="510" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="510" value=2 id="4"/>そうだ
+                    <input type="radio" name="510" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>きれいにしておかなければ、どうしても落ち着かない方ではない</p>
+                    <input type="radio" name="511" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="511" value=4 id="2"/>そうでない
+                    <input type="radio" name="511" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="511" value=2 id="4"/>そうだ
+                    <input type="radio" name="511" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>私はいつも何かしている</p>
+                    <input type="radio" name="310" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="310" value=2 id="2"/>そうでない
+                    <input type="radio" name="310" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="310" value=4 id="4"/>そうだ
+                    <input type="radio" name="310" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>遊びに行くなら、以前に行ったことがあり、当たりはずれのないところに行く方が好きだ</p>
+                    <input type="radio" name="111" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="111" value=4 id="2"/>そうでない
+                    <input type="radio" name="111" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="111" value=2 id="4"/>そうだ
+                    <input type="radio" name="111" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>自分より不運な人に同情する</p>
+                    <input type="radio" name="411" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="411" value=2 id="2"/>そうでない
+                    <input type="radio" name="411" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="411" value=4 id="4"/>そうだ
+                    <input type="radio" name="411" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>私は有能で、効率よく仕事をこなす</p>
+                    <input type="radio" name="512" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="512" value=2 id="2"/>そうでない
+                    <input type="radio" name="512" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="512" value=4 id="4"/>そうだ
+                    <input type="radio" name="512" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>大勢の人が集まるパーティーが好きだ</p>
+                    <input type="radio" name="311" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="311" value=2 id="2"/>そうでない
+                    <input type="radio" name="311" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="311" value=4 id="4"/>そうだ
+                    <input type="radio" name="311" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>無理をしてでも、人に手をかしてあげる</p>
+                    <input type="radio" name="412" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="412" value=2 id="2"/>そうでない
+                    <input type="radio" name="412" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="412" value=4 id="4"/>そうだ
+                    <input type="radio" name="412" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>非常に活動的な人間だ</p>
+                    <input type="radio" name="312" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="312" value=2 id="2"/>そうでない
+                    <input type="radio" name="312" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="312" value=4 id="4"/>そうだ
+                    <input type="radio" name="312" value=5 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>強く心を動かされるようなことはめったにない</p>
+                    <input type="radio" name="112" value=5 id="1"/>全くそうでない
+                    <input type="radio" name="112" value=4 id="2"/>そうでない
+                    <input type="radio" name="112" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="112" value=2 id="4"/>そうだ
+                    <input type="radio" name="112" value=1 id="5"/>非常にそうだ
+                </li>
+                <br>
+                <li>
+                    <p>何もかもうまくいかないように思える時でも、適切な判断をすることができる</p>
+                    <input type="radio" name="212" value=1 id="1"/>全くそうでない
+                    <input type="radio" name="212" value=2 id="2"/>そうでない
+                    <input type="radio" name="212" value=3 id="3"/>どちらでもない
+                    <input type="radio" name="212" value=4 id="4"/>そうだ
+                    <input type="radio" name="212" value=5 id="5"/>非常にそうだ
+                </li>
+            </li>
+        </div>
+        <br>
+        <button type="button" id="result">回答を見る</button>
+        <br>
+        <br>
+        <table border="1">
+            <tr><th></th><th> 点数 </th></tr>
+            <tr><th>神経症的傾向</th><th id="scoreN">(none)</th></tr>
+            <tr><th>外向性</th><th id="scoreE">(none)</th></tr>
+            <tr><th>経験への開放性</th><th id="scoreO">(none)</th></tr>
+            <tr><th>調和性</th><th id="scoreA">(none)</th></tr>
+            <tr><th>誠実性</th><th id="scoreC">(none)</th></tr>
+        </table>
+        <hr>
+    </main>
+    <footer>
+        <h2>Neo-PI-Rとは</h2>
+        <p>
+        NEO-PI-R（NEO Personality Inventory-Revised）は、<br>
+        心理学者コスタ（Costa）とマクレー（McCrae）によって開発された<br>
+        **パーソナリティの５因子モデル（Big Five）**を測定する代表的な性格検査です。<br>
+        (ChatGPTより引用)
+        </p>
+        <br>
+        <h3><strong>① 神経症傾向（Neuroticism）</strong></h3>
+        <p>
+        感情の安定性やストレス耐性に関わる特性です。<br>
+        <srtong>高い人</srtong>
+        <br>不安、怒り、抑うつ、自己意識過剰、衝動性、脆弱性などが強く、ストレスを感じやすい傾向があります。<br>
+        <strong>低い人</strong>
+        <br>冷静で感情的に安定しており、ストレスに強く、落ち着いた性格を示します。<br>
+        </p>
+        <h3><strong>② 外向性（Extraversion）</strong></h3>
+        <p>
+        社交性や活動性、エネルギーの方向を表す特性です。。<br>
+        <strong>高い人</strong>
+        <br>社交的で、活発、明るく、他者との交流を楽しむ傾向があります。<br>
+        <strong>低い人（内向的）</strong>
+        <br>一人で過ごすことを好み、控えめで思慮深く、静かな活動を好みます。<br>
+        </p>
+        <h3><strong>③ 開放性（Openness to Experience）</strong></h3>
+        <p>
+        新しい経験や価値観への柔軟さ、想像力や好奇心を表す特性です。<br>
+        <strong>高い人</strong>
+        <br>創造的で想像力豊か、芸術や哲学などへの関心が高く、新しい考えを受け入れやすいです。<br>
+        <strong>低い人</strong>
+        <br>伝統的で実際的、慣れ親しんだやり方を好み、新奇なものに慎重な傾向があります。<br>
+        </p>
+        <h3><strong>④ 調和性（Agreeableness）</strong></h3>
+        <p>
+        他者への共感や協調性、思いやりを示す特性です<br>
+        <strong>高い人</strong>
+        <br>親切で思いやりがあり、他人を信頼し、助け合いを重視します。<br>
+        <strong>低い人</strong>
+        <br>競争的で批判的、他人に懐疑的で対立的な態度をとることがあります。<br>
+        </p>
+        <h3><strong>⑤ 誠実性（Conscientiousness）</strong></h3>
+        <p>
+        自己統制、責任感、目標達成への意欲を示す特性です。<br>
+        <strong>高い人</strong>
+        <br>計画的で勤勉、責任感が強く、目標に向かって粘り強く努力します。<br>
+        <strong>低い人</strong>
+        <br>衝動的で整理整頓が苦手、約束を守らない傾向があり、計画性に欠けます。<br>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
