@@ -12,7 +12,6 @@ const totallingO = () => {
         let radioValueO = radioO ? Number(radioO.value) : 0;
         valueO += radioValueO;
     }
-    alert(valueO)
     document.getElementById('scoreO').textContent = valueO;
 }
 
@@ -28,7 +27,6 @@ const totallingN = () => {
         let radioValueN = radioN ? Number(radioN.value) : 0;
         valueN += radioValueN;
     }
-    alert(valueN)
     document.getElementById('scoreN').textContent = valueN;
 }
 
@@ -44,7 +42,6 @@ const totallingE = () => {
         let radioValueE = radioE ? Number(radioE.value) : 0;
         valueE += radioValueE;
     }
-    alert(valueE)
     document.getElementById('scoreE').textContent = valueE;
 }
 
@@ -60,7 +57,6 @@ const totallingA = () => {
         let radioValueA = radioA ? Number(radioA.value) : 0;
         valueA += radioValueA;
     }
-    alert(valueA)
     document.getElementById('scoreA').textContent = valueA;
 }
 
@@ -76,7 +72,6 @@ const totallingC = () => {
         let radioValueC = radioC ? Number(radioC.value) : 0;
         valueC += radioValueC;
     }
-    alert(valueC)
     document.getElementById('scoreC').textContent = valueC;
 }
 
